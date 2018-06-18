@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="br.ufsc.rodolfo.brasilnarussia">
+    package="br.ufsc.victor.brasilnacopa">
 
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -16,7 +16,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="br.ufsc.victor.brasilnacopa.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,14 +24,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ListPlayersActivity"
-            android:parentActivityName=".MainActivity" />
+            android:name="br.ufsc.victor.brasilnacopa.ListPlayersActivity"
+            android:parentActivityName="br.ufsc.victor.brasilnacopa.MainActivity" />
         <activity
-            android:name=".NewsActivity"
-            android:parentActivityName=".MainActivity" />
+            android:name="br.ufsc.victor.brasilnacopa.NewsActivity"
+            android:parentActivityName="br.ufsc.victor.brasilnacopa.MainActivity" />
         <activity
-            android:name=".NewsDetailsActivity"
-            android:parentActivityName=".NewsActivity" />
+            android:name="br.ufsc.victor.brasilnacopa.NewsDetailsActivity"
+            android:parentActivityName="br.ufsc.victor.brasilnacopa.NewsActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -45,12 +45,12 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".MapsActivity"
+            android:name="br.ufsc.victor.brasilnacopa.MapsActivity"
             android:label="@string/title_activity_maps"
-            android:parentActivityName=".CronogramaActivity" />
+            android:parentActivityName="br.ufsc.victor.brasilnacopa.CronogramaActivity" />
         <activity
-            android:name=".CronogramaActivity"
-            android:parentActivityName=".MainActivity" />
+            android:name="br.ufsc.victor.brasilnacopa.CronogramaActivity"
+            android:parentActivityName="br.ufsc.victor.brasilnacopa.MainActivity" />
     </application>
 
 </manifest>

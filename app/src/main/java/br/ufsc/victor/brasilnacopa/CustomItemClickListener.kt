@@ -1,4 +1,4 @@
-package br.ufsc.rodolfo.brasilnarussia
+package br.ufsc.victor.brasilnacopa
 
 import android.view.View
 

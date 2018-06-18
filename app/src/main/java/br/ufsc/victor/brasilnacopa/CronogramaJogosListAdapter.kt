@@ -1,7 +1,6 @@
-package br.ufsc.rodolfo.brasilnarussia
+package br.ufsc.victor.brasilnacopa
 
 import android.content.Context
-import android.content.Intent
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
@@ -53,10 +52,12 @@ class CronogramaJogosListAdapter(private val context: Context,
             val data = itemView.jogos_list_data
             val horario = itemView.jogos_list_horario
             val local = itemView.jogos_list_local
+            val versus = itemView.jogos_list_versus
 
             data.text = cronogramaJogos.data
             horario.text = cronogramaJogos.horario
             local.text = cronogramaJogos.local
+            versus.text = cronogramaJogos.versus
         }
     }
 }

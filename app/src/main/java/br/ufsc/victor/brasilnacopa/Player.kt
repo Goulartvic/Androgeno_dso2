@@ -1,4 +1,4 @@
-package br.ufsc.rodolfo.brasilnarussia
+package br.ufsc.victor.brasilnacopa
 
 import android.content.Context
 import org.json.JSONException
@@ -8,6 +8,7 @@ import org.json.JSONObject
 class Player(val name: String,
              val age: String,
              val position: String,
+             val imageUrl: String,
              val team: String) {
     companion object {
         fun getPlayersFromFile(filename: String, context: Context): ArrayList<Player> {
@@ -15,7 +16,7 @@ class Player(val name: String,
             val playersList = ArrayList<Player>()
 
             try {
-                val jsonString = Player.loadJsonFromAsset("players.json", context)
+                val jsonString = loadJsonFromAsset("players.json", context)
                 val json = JSONObject(jsonString)
                 val playersContent = json.getJSONArray("players")
 
@@ -23,6 +24,7 @@ class Player(val name: String,
                     Player(playersContent.getJSONObject(it).getString("name"),
                             playersContent.getJSONObject(it).getString("age"),
                             playersContent.getJSONObject(it).getString("position"),
+                            playersContent.getJSONObject(it).getString("imageUrl"),
                             playersContent.getJSONObject(it).getString("team"))
                 }
             } catch (e: JSONException) {
@@ -51,7 +53,7 @@ class Player(val name: String,
     }
 
     override fun toString(): String {
-        return "Player(name='$name', age='$age', position='$position', team='$team')"
+        return "Player(name='$name', age='$age', position='$position', imageUrl='$imageUrl', team='$team')"
     }
 
 }

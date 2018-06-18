@@ -3,23 +3,26 @@
     {
       "data": "17/06/2018",
       "horario": "15:00",
-      "local": "local da russia",
-      "lat": "-27.6368861",
-      "lng": "-48.660947"
+      "local": "Rostov-on-Don",
+      "versus": "Brasil x Suíça",
+      "lat": "47.2363889",
+      "lng": "39.7138889"
+    },
+    {
+      "data": "17/06/2018",
+      "horario": "09:00",
+      "local": "São Petersburgo",
+      "versus": "Brasil x Costa Rica",
+      "lat": "59.9386300",
+      "lng": "30.3141300"
     },
     {
       "data": "17/06/2018",
       "horario": "15:00",
-      "local": "local da russia",
-      "lat": "-27.6036004",
-      "lng": "48.5250796"
-    },
-    {
-      "data": "17/06/2018",
-      "horario": "15:00",
-      "local": "local da russia",
-      "lat": "-34.0",
-      "lng": "151.0"
+      "local": "Moscou",
+      "versus": "Brasil x Sérvia",
+      "lat": "55.7522200",
+      "lng": "37.6155600"
     }
   ]
 }

@@ -1,4 +1,4 @@
-package br.ufsc.rodolfo.brasilnarussia
+package br.ufsc.victor.brasilnacopa
 
 import android.content.Context
 import org.json.JSONException
@@ -7,6 +7,7 @@ import org.json.JSONObject
 class CronogramaJogos(val data: String,
                       val horario: String,
                       val local: String,
+                      val versus: String,
                       val lat: String,
                       val lng: String) {
     companion object {
@@ -23,6 +24,7 @@ class CronogramaJogos(val data: String,
                     CronogramaJogos(cronogramaContent.getJSONObject(it).getString("data"),
                             cronogramaContent.getJSONObject(it).getString("horario"),
                             cronogramaContent.getJSONObject(it).getString("local"),
+                            cronogramaContent.getJSONObject(it).getString("versus"),
                             cronogramaContent.getJSONObject(it).getString("lat"),
                             cronogramaContent.getJSONObject(it).getString("lng"))
                 }

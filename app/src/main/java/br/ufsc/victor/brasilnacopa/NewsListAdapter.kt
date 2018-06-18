@@ -1,12 +1,10 @@
-package br.ufsc.rodolfo.brasilnarussia
+package br.ufsc.victor.brasilnacopa
 
 import android.content.Context
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
-import android.view.View.OnClickListener
 import android.view.ViewGroup
-import android.widget.AdapterView
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.news_list_item.view.*
 

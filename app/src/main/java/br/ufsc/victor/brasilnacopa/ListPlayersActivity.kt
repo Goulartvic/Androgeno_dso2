@@ -1,4 +1,4 @@
-package br.ufsc.rodolfo.brasilnarussia
+package br.ufsc.victor.brasilnacopa
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle

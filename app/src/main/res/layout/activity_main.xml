@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:background="@android:color/holo_orange_light"
+    tools:context="br.ufsc.victor.brasilnacopa.MainActivity">
 
     <TextView
         android:id="@+id/text_jogadoresConvocados"
@@ -12,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="25dp"
-        android:text="Veja jogadores convocados"
+        android:text="Jogadores Convocados"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -28,17 +29,19 @@
         android:text="Aqui"
         app:layout_constraintBottom_toBottomOf="@+id/text_jogadoresConvocados"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/text_jogadoresConvocados"
-        app:layout_constraintTop_toTopOf="@+id/text_jogadoresConvocados" />
+        app:layout_constraintTop_toTopOf="@+id/text_jogadoresConvocados"
+        app:layout_constraintVertical_bias="0.641" />
 
     <TextView
         android:id="@+id/text_noticias"
-        android:layout_width="236dp"
-        android:layout_height="50dp"
+        android:layout_width="198dp"
+        android:layout_height="24dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="92dp"
-        android:text="Veja noticicias sobre a preparação da seleção BR"
+        android:text="Notícias da Seleção"
         android:textSize="18sp"
         app:layout_constraintDimensionRatio=""
         app:layout_constraintEnd_toStartOf="@+id/button2"
@@ -64,7 +67,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
-        android:text="Veja os locais onde o BR ira zuar"
+        android:text="Locais dos jogos"
         android:textSize="18sp"
         app:layout_constraintEnd_toStartOf="@+id/btnMaps"
         app:layout_constraintHorizontal_bias="0.0"
