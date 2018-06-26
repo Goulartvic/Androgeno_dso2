@@ -7,8 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import kotlinx.android.synthetic.main.jogos_list_item.view.*
 
-class CronogramaJogosListAdapter(private val context: Context,
-                                 private val jogosList: ArrayList<CronogramaJogos>) : RecyclerView.Adapter<CronogramaJogosListAdapter.ViewHolder>() {
+class GamesScheduleListAdapter(private val context: Context,
+                               private val jogosList: ArrayList<GamesSchedule>) : RecyclerView.Adapter<GamesScheduleListAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(context).inflate(R.layout.jogos_list_item, parent, false)
@@ -48,16 +48,16 @@ class CronogramaJogosListAdapter(private val context: Context,
             this.customItemClickListener!!.onCustomItemClickListener(v!!, adapterPosition)
         }
 
-        fun bindView(cronogramaJogos: CronogramaJogos) {
+        fun bindView(gamesSchedule: GamesSchedule) {
             val data = itemView.jogos_list_data
             val horario = itemView.jogos_list_horario
             val local = itemView.jogos_list_local
             val versus = itemView.jogos_list_versus
 
-            data.text = cronogramaJogos.data
-            horario.text = cronogramaJogos.horario
-            local.text = cronogramaJogos.local
-            versus.text = cronogramaJogos.versus
+            data.text = gamesSchedule.data
+            horario.text = gamesSchedule.horario
+            local.text = gamesSchedule.local
+            versus.text = gamesSchedule.versus
         }
     }
 }

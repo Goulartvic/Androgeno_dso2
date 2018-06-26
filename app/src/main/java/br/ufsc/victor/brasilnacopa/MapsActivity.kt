@@ -24,7 +24,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         const val EXTRA_LNG = "lng"
         const val EXTRA_TITLE = "title"
 
-        fun newIntent(context: Context, cronograma: CronogramaJogos): Intent {
+        fun newIntent(context: Context, cronograma: GamesSchedule): Intent {
             val cronogramaIntent = Intent(context, MapsActivity::class.java)
 
             cronogramaIntent.putExtra(EXTRA_LAT, cronograma.lat)

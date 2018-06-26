@@ -29,9 +29,6 @@
         <activity
             android:name="br.ufsc.victor.brasilnacopa.NewsActivity"
             android:parentActivityName="br.ufsc.victor.brasilnacopa.MainActivity" />
-        <activity
-            android:name="br.ufsc.victor.brasilnacopa.NewsDetailsActivity"
-            />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -47,9 +44,9 @@
         <activity
             android:name="br.ufsc.victor.brasilnacopa.MapsActivity"
             android:label="@string/title_activity_maps"
-            android:parentActivityName="br.ufsc.victor.brasilnacopa.CronogramaActivity" />
+            android:parentActivityName="br.ufsc.victor.brasilnacopa.ScheduleActivity" />
         <activity
-            android:name="br.ufsc.victor.brasilnacopa.CronogramaActivity"
+            android:name="br.ufsc.victor.brasilnacopa.ScheduleActivity"
             android:parentActivityName="br.ufsc.victor.brasilnacopa.MainActivity" />
     </application>
 

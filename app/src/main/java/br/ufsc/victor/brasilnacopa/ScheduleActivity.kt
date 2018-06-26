@@ -6,7 +6,7 @@ import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_cronograma.*
 
-class CronogramaActivity : AppCompatActivity() {
+class ScheduleActivity : AppCompatActivity() {
 
     private lateinit var recyclerViewJogos: RecyclerView
 
@@ -14,10 +14,10 @@ class CronogramaActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cronograma)
 
-        val jogosList = CronogramaJogos.getCronogramaFromFile("jogos.json", this)
+        val jogosList = GamesSchedule.getCronogramaFromFile("jogos.json", this)
         recyclerViewJogos = recycler_jogos
 
-        recyclerViewJogos.adapter = CronogramaJogosListAdapter(this, jogosList)
+        recyclerViewJogos.adapter = GamesScheduleListAdapter(this, jogosList)
         recyclerViewJogos!!.layoutManager = LinearLayoutManager(this)
 
     }

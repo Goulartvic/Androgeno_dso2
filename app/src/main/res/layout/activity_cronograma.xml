@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/holo_orange_light"
-    tools:context="br.ufsc.victor.brasilnacopa.CronogramaActivity">
+    tools:context="br.ufsc.victor.brasilnacopa.ScheduleActivity">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_jogos"

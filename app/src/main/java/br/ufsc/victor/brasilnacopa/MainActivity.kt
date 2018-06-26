@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun openMaps(view: View?) {
-        val intentMaps = Intent(this, CronogramaActivity::class.java)
+        val intentMaps = Intent(this, ScheduleActivity::class.java)
         startActivity(intentMaps)
     }
 }

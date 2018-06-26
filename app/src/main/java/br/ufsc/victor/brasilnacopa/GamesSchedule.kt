@@ -4,16 +4,16 @@ import android.content.Context
 import org.json.JSONException
 import org.json.JSONObject
 
-class CronogramaJogos(val data: String,
-                      val horario: String,
-                      val local: String,
-                      val versus: String,
-                      val lat: String,
-                      val lng: String) {
+class GamesSchedule(val data: String,
+                    val horario: String,
+                    val local: String,
+                    val versus: String,
+                    val lat: String,
+                    val lng: String) {
     companion object {
-        fun getCronogramaFromFile(filename: String, context: Context): ArrayList<CronogramaJogos> {
+        fun getCronogramaFromFile(filename: String, context: Context): ArrayList<GamesSchedule> {
 
-            val jogosList = ArrayList<CronogramaJogos>()
+            val jogosList = ArrayList<GamesSchedule>()
 
             try {
                 val jsonString = loadJsonFromAsset("jogos.json", context)
@@ -21,7 +21,7 @@ class CronogramaJogos(val data: String,
                 val cronogramaContent = json.getJSONArray("jogos")
 
                 (0 until cronogramaContent.length()).mapTo(jogosList) {
-                    CronogramaJogos(cronogramaContent.getJSONObject(it).getString("data"),
+                    GamesSchedule(cronogramaContent.getJSONObject(it).getString("data"),
                             cronogramaContent.getJSONObject(it).getString("horario"),
                             cronogramaContent.getJSONObject(it).getString("local"),
                             cronogramaContent.getJSONObject(it).getString("versus"),
