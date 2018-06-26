@@ -19,7 +19,6 @@ class NewsDetailsActivity : AppCompatActivity() {
             val detailIntent = Intent(context, NewsDetailsActivity::class.java)
 
             detailIntent.putExtra(EXTRA_TITLE, news.title)
-            detailIntent.putExtra(EXTRA_URL, news.newsUrl)
 
             return detailIntent
         }

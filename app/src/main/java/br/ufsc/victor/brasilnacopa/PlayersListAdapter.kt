@@ -45,6 +45,5 @@ class PlayersListAdapter(private val players: List<Player>,
             time.text = player.team
             Picasso.with(con).load(player.imageUrl).placeholder(R.mipmap.ic_launcher_round).into(image)
         }
-
     }
 }

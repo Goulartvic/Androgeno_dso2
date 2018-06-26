@@ -35,7 +35,7 @@ class Player(val name: String,
         }
 
         private fun loadJsonFromAsset(filename: String, context: Context): String? {
-            var json: String? = null
+            var json: String?
             try {
                 val inputStream = context.assets.open(filename)
                 val size = inputStream.available()

@@ -12,20 +12,18 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    fun abrirListaJogadores(view: View?) {
+    fun openPlayerList(view: View?) {
         val intentPlayers = Intent(this, ListPlayersActivity::class.java)
         startActivity(intentPlayers)
     }
 
-    fun abrirListaNoticias(view: View?) {
+    fun openNewsList(view: View?) {
         val intentNews = Intent(this, NewsActivity::class.java)
         startActivity(intentNews)
     }
 
-    fun abrirMapaLocaisJogoBR(view: View?) {
+    fun openMaps(view: View?) {
         val intentMaps = Intent(this, CronogramaActivity::class.java)
         startActivity(intentMaps)
     }
-
-
 }

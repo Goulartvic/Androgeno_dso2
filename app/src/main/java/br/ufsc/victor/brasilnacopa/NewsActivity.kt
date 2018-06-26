@@ -14,7 +14,7 @@ class NewsActivity : AppCompatActivity() {
         val newsList = News.getNewsFromFile("news.json", this)
         val recyclerViewNews = recycler_news
 
-        recyclerViewNews.adapter = NewsListAdapter(this, newsList)
+        recyclerViewNews.adapter = NewsListAdapter(this, newsList, this)
         recyclerViewNews!!.layoutManager = LinearLayoutManager(this)
     }
 }

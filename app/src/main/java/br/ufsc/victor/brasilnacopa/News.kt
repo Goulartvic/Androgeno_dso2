@@ -8,7 +8,7 @@ class News(
         val title: String,
         val description: String,
         val imageUrl: String,
-        val newsUrl: String) {
+        val youtubeLink: String) {
     companion object {
         fun getNewsFromFile(filename: String, context: Context): ArrayList<News> {
 
@@ -23,7 +23,7 @@ class News(
                     News(newsContent.getJSONObject(it).getString("title"),
                             newsContent.getJSONObject(it).getString("description"),
                             newsContent.getJSONObject(it).getString("imageUrl"),
-                            newsContent.getJSONObject(it).getString("newsUrl"))
+                            newsContent.getJSONObject(it).getString("youtubeLink"))
                 }
             } catch (e: JSONException) {
                 e.printStackTrace()
